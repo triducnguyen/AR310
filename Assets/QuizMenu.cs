@@ -6,6 +6,7 @@ public class QuizMenu : MonoBehaviour
 {
     public List<GameObject> Quiz;
     public GameObject button;
+    public GameObject dancingShark;
     private int counter;
     // Start is called before the first frame update
     private void Awake()
@@ -19,6 +20,13 @@ public class QuizMenu : MonoBehaviour
     public void CorrectAnswer()
     {
         counter++;
+        if(counter == 3)
+        {
+            Quiz[counter].SetActive(false);
+            dancingShark.SetActive(true);
+            return;
+            
+        }
         Quiz[counter - 1 ].SetActive(false);
         Quiz[counter].SetActive(true);
     }

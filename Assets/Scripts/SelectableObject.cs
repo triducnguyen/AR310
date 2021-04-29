@@ -5,12 +5,17 @@ using UnityEngine;
 public class SelectableObject : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] GameObject objectText;
-    bool selected = false;
+    [SerializeField] GameObject objectToSetActive;
+    public bool selected = false;
     public void ToggleSelected()
     {
         selected = !selected;
 
-        objectText.SetActive(selected);
+        objectToSetActive.SetActive(selected);
+    }
+
+    private void Update()
+    {
+            objectToSetActive.SetActive(selected);
     }
 }

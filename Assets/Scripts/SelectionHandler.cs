@@ -5,7 +5,7 @@ using UnityEngine.XR.ARFoundation;
 
 public class SelectionHandler : MonoBehaviour
 {
-    [SerializeField] Camera camera;
+    [SerializeField] Camera sceneCamera;
     Vector2 touchPosition = default;
     ARRaycastManager arRaycastManager;
 
@@ -25,7 +25,7 @@ public class SelectionHandler : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                Ray ray = camera.ScreenPointToRay(touchPosition);
+                Ray ray = sceneCamera.ScreenPointToRay(touchPosition);
                 RaycastHit hitObject;
                 if (Physics.Raycast(ray, out hitObject))
                 {

@@ -11,6 +11,6 @@ public class LinkToARScene : MonoBehaviour
     }
     public void LinkToAR()
     {
-        SceneManager.LoadScene("AR");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

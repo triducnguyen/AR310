@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class DragSystem : MonoBehaviour, IPointerDownHandler,IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    [SerializeField] public Canvas canvas;
+	public Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     public int CorrectAnswer;
@@ -25,7 +25,7 @@ public class DragSystem : MonoBehaviour, IPointerDownHandler,IBeginDragHandler, 
     public void OnDrag(PointerEventData eventData)
     {
 
-        rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
+        rectTransform.anchoredPosition += eventData.delta;
     }
 
     public void OnEndDrag(PointerEventData eventData)

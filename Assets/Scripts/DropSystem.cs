@@ -16,7 +16,8 @@ public class DropSystem : MonoBehaviour, IDropHandler
         Debug.Log("OnDrop");
         if(eventData.pointerDrag != null)
         {
-            matchTitle.SetActive(false);
+            //if(matchTitle != null)
+            //    matchTitle.SetActive(false);
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             if(eventData.pointerDrag.GetComponent<DragSystem>().CorrectAnswer == Answer)
             {

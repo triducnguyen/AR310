@@ -11,6 +11,7 @@ public class DropSystem : MonoBehaviour, IDropHandler
     public GameObject inCorrectAnswer;
     public GameObject CorrectAnswer;
     public GameObject matchTitle;
+    public int CheckifInactive = 0;
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("OnDrop");
@@ -25,6 +26,7 @@ public class DropSystem : MonoBehaviour, IDropHandler
                 inCorrectAnswer.SetActive(false);
                 CorrectAnswer.SetActive(true);
                 gameObject.SetActive(false);
+                CheckifInactive = 1;
             }
             else
             {

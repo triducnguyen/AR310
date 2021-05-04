@@ -778,7 +778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &78456413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6916,7 +6916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &816563752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6958,8 +6958,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183ec59acb1c6d540a5525bd2b6bf2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  list: []
+  list:
+  - {fileID: 1277910215}
+  - {fileID: 1195320136}
+  - {fileID: 1630419751}
+  CongratzScene: {fileID: 46054797}
   isComplete: 0
+  count: 0
 --- !u!1 &819184187
 GameObject:
   m_ObjectHideFlags: 0
@@ -11401,6 +11406,7 @@ MonoBehaviour:
   inCorrectAnswer: {fileID: 6783120530047999841}
   CorrectAnswer: {fileID: 895543612}
   matchTitle: {fileID: 754748359}
+  CheckifInactive: 0
 --- !u!222 &1195320139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12600,6 +12606,7 @@ MonoBehaviour:
   inCorrectAnswer: {fileID: 6783120530047999841}
   CorrectAnswer: {fileID: 895543612}
   matchTitle: {fileID: 754748359}
+  CheckifInactive: 0
 --- !u!222 &1277910219
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15627,6 +15634,7 @@ MonoBehaviour:
   inCorrectAnswer: {fileID: 6783120530047999841}
   CorrectAnswer: {fileID: 895543612}
   matchTitle: {fileID: 754748359}
+  CheckifInactive: 0
 --- !u!222 &1630419754
 CanvasRenderer:
   m_ObjectHideFlags: 0

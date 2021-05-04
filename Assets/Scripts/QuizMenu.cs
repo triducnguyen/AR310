@@ -8,6 +8,8 @@ public class QuizMenu : MonoBehaviour
     public GameObject button;
     public GameObject dancingShark;
     public GameObject background;
+    public GameObject ContinueButton;
+    public GameObject ToMatchingGame;
     private int counter;
     // Start is called before the first frame update
     private void Awake()
@@ -36,5 +38,12 @@ public class QuizMenu : MonoBehaviour
     public void InCorrectAnswer()
     {
         Debug.Log("Incorrect Answer");
+    }
+
+    public void Continue()
+    {
+        dancingShark.SetActive(false);
+        background.SetActive(false);
+        ToMatchingGame.SetActive(true);
     }
 }

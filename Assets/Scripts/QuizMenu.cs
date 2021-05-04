@@ -42,8 +42,9 @@ public class QuizMenu : MonoBehaviour
 
     public void Continue()
     {
+		ToMatchingGame.SetActive(true);
         dancingShark.SetActive(false);
         background.SetActive(false);
-        ToMatchingGame.SetActive(true);
+        
     }
 }
